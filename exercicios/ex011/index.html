@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 011 - Mídias</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <h2>Tente abrir este site, em dispositivos diferentes, ou entao diminua e aumente janela do navegador</h2>
+    <picture>
+        <!-- Usando source, para imagem em um site carregar, de acordo com resolução a ser exibida
+        Devemos sempre fazer da menor imagem para maior, e determinar em qual resolução 'PIXEL' devera ser exibida X ou Y imagem para usuário -->
+        <source media="(max-width:730px)" srcset="imagem/imgp.png" type="image/png">
+        <source media="(max-width: 1040px)" srcset="imagem/imgm.png" type="image/png">
+        <img src="imagem/imgg.png" alt="Imagem Flexivel">
+      </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Aprender reproduzir mídia</p>
+    <!-- #$ audio/video preload $#
+        'metadata' = pra carregar dados de video
+        'none' = não faz nada(só quando usuário clicar em play, irá carregar
+    e  aparecer o conteúdo)
+        'auto' = carregar tudo, inclusive o conteúdo -->
+        <!-- Controls para mostrar menu simples de play/pause, volume etc.. -->
+    <audio preload="metadata" controls>
+        <!-- Para conseguir reproduzir na maioria dos dispositivos, devemos usar a função source, para carregar diferentes extensão de determinado video/audio(e outros), até que o navegador do usuário carregue tal informação conforme abaixo, segue a ordem de cima pra baixo; -->
+        <source src="midia/festival.mp3" type="audio/mpeg">
+        <!-- Caso o audio acima não carregar, colocamos uma outra opção, em outra elemento source, do mesmo conteúdo porem com extensão diferente, lembrar sempre de utilizar TYPE, para determinar o tipo de conteúdo e extensão (exemplo: type="audio/ogg") -->
+        <source src="midia/festival.mp3" type="audio/ogg">
+        <!-- Caso o navegador do usuário, não conseguir reproduzir nenhum dos listados abaixo, podemos colocar opção alternativa para o mesmo fazer DOWNLOAD -->
+        <p>Infelizmente não foi possivel reproduzir a música, clique em download, para baixar a música</p>
+        <p><a href="midia/festival.mp3">Download</a></p>
+    </audio>
+    <p>Se preferir voce pode baixar clicando em download</p>
+    <p><a href="midia/festival.mp3">Download</a></p>
+    <h2>Reproduzir video</h2>
+    <video src="midia/filhotecomendo.mp4" mediagroup controls autoplay></video>
+
+    <!--<audio src="midia/festival.mp3" controls autoplay >..</audio>
+    mp3 / ogg / mpeg-->
+</body>
+</html>

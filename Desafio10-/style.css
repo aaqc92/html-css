@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid.otf';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-size: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* corpo site fundo*/
+body{
+    display: block;
+    overflow-x: hidden;
+    background-color: #dbeeb8;
+    border-width: 5px;
+}
+
+/* H1 E LOGO SITE */
+header{
+    display: block;
+    background-image: linear-gradient(#36e04abe 5%, #85E590 15%, #2AAD39, #176120);
+    box-shadow: 2px 2px 2px 2px, black;
+    padding: 2px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+}
+
+/*Texto encima dos Menu*/
+header > p{
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    padding: 18px;
+    margin-bottom: 25px;
+    text-overflow: ;
+}
+
+/* LINKS MENUS */
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 4px;
+    padding: 4px;
+    opacity: 1;
+    transition-duration: 0.5s;
+    
+}
+
+nav > a:hover{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-weight: bold;
+    border-radius: 6px;
+    opacity: 0.4;
+    text-shadow: none;
+}
+
+nav{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -12px;
+}
+
+/* MAIN - HISTÓRIA , PRIMEIRA VERSÃO, SURGE UM NOVO MASCOTE */
+
+main{
+    text-align: center;
+    background-color: white;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 18px;
+    
+}
+
+h2{
+    background-image:linear-gradient(to right,#2aaf3996 5%,#2aad3941 15%, #ecf8ee);
+    font-family: 'idroid.otf','Courier New', Courier, monospace;
+    font-weight: normal;
+    color: #125019;
+    text-align: left;
+    margin: 10px;
+}
+
+.youtube {
+    background-color: #12501993; /* cor fundo video */
+    padding: 10px; /* espaço ao redor do video*/
+}
+
+.extra >h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #239931;
+    color: white;
+    margin-top: 0px;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding:5px;
+}
+
+.extra >p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.extra{
+    background-color: #bff1c5;
+    text-align: justify;
+    margin-left:5px;
+    margin-right: 5px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    
+}
+
+.lista{
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+  
+.lista li {
+    margin-bottom: 5px;
+    margin-left: 50px;
+    text-decoration: underline;
+
+}
+
+.obs{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h4{
+    background-color:#2AAD39;
+    color: white;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+
+    
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-block: 15px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 100%;
+
+    text-align: center;
+
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
+
+.navegacao{
+    padding-left: 400px;
+}
+
+/*
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* proporção de 16:9 para o vídeo 
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
+
+
+
+/* corpo site fundo
+body{
+    display: block;
+    background-color: #85e590a2;
+    height: 600px;
+    width: 1240px;
+    margin-right: -1px;
+    border-width: 5px;
+    margin: 12px;
+}
+
+/* H1 E LOGO SITE 
+header{
+    display: block;
+    height: 500;
+    width: 450;
+
+    background-image: linear-gradient(#36e04abe 5%, #85E590 15%, #2AAD39, 
+    #176120);
+    box-shadow: 2px 2px 2px 2px, black;
+    
+    padding: 5px;
+    padding-bottom: 20px;
+    
+    margin: -10px;
+    margin-bottom: 1px;
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: normal;
+    
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+
+}
+/*Texto encima dos Menu
+header > p{
+    display:block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    padding: 18px;
+    margin-bottom: 25px;
+    
+}
+
+/* LINKS MENUS 
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    padding: 5px;
+    
+}
+
+nav{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -12px;
+}
+
+
+/* MAIN - HISTÓRIA , PRIMEIRA VERSÃO, SURGE UM NOVO MASCOTE 
+
+main{
+    text-align: center;
+    height: 2500px;
+    width: 800px;
+    background-color: white;
+    padding-top: 10px;
+    margin-left: 200px;
+    
+}
+
+h2{
+    font-family: 'idroid.otf','Courier New', Courier, monospace;
+    font-weight: normal;
+    color: #125019;
+}*/

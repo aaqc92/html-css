@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag's</title>
+    <style>
+        body{
+            background-color: rgba(67, 168, 207, 0.808);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: rgba(255, 255, 255, 0.836);
+            border-radius: 5px;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 15px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px;
+            
+        }
+
+        main{
+            background-color: white;
+            border-radius: 25px 0px;
+            border: 2px solid rgb(44, 44, 230);
+            padding: 15px;
+            margin: 15px 15px;
+            box-shadow: 2px 2px 5px;
+        }
+
+
+
+        h1{
+            background-color: cadetblue;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2{
+            background-color: rgba(23, 142, 189, 0.329);
+            text-align: center;
+            box-shadow: 1px 2px 2px;
+        }
+        
+        p{
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav{
+            background-color: rgb(204, 224, 235);
+            padding: 3px;
+            box-shadow: 3px 2px 2px;
+
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            font-style: italic;
+            padding: 13px;
+            height: 30px;
+
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            padding: 1px;
+            margin: auto;
+
+            background-color: rgb(51, 236, 211);
+        }
+
+        nav > a::before{
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+        }
+
+
+
+        aside{
+            background-color: rgb(241, 226, 207);
+            color: rgb(43, 33, 33);
+            width: 220px;
+            height: 21px;
+            margin-left: auto;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 1px;
+            border-radius: 8px;
+        }
+
+        footer > p{
+            text-align: center;
+            margin: 0px;
+            padding: 1px;
+            
+        }
+
+        div#bola{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(16, 51, 248);
+            margin: 3%;
+            color: white;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="bola">!!</div>
+        <h1>MEU SITE</h1>
+        <nav>
+            <a href="#">Teste 1</a>
+            <a href="#">Teste 2</a>
+            <a href="#">Teste 3</a>
+            <a href="#">Teste 4</a>
+            <a href="#">Teste 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero accusantium ipsam doloribus saepe sit aliquam similique, magni cumque nihil neque repellendus, odit non reprehenderit earum, ex delectus magnam ut dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ab facere, vel ut dolores quis aperiam recusandae dolorem, repellat ipsum eius quasi tempora inventore ducimus vero corrupti debitis, explicabo laboriosam.</p>
+                <aside>Escrito e revisado por Fulano</aside>
+            </article>
+            <article>
+                <h2>Noticias 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam a non ab doloremque atque eligendi iure facere ducimus esse ipsam, minus cupiditate id dolores, deleniti voluptate rerum assumenda earum?<br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ex numquam pariatur facere, aspernatur, vel quae, reprehenderit possimus quam ea commodi asperiores laboriosam quaerat molestias hic vero dignissimos harum suscipit!</p>
+                <aside>Escrito e revisado por Fulano</aside>
+            </article>
+        </section>
+    </main>
+    <footer><p>Desenvolvido por RespecMyHistory <sub>COMPANY</p></sup></sup></footer>
+    
+
+</body>
+</html>
