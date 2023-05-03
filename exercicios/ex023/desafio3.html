@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 1.8em;
+        }
+        table{
+            background-color: white;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 100px;
+        }
+        thead > tr > td{
+            background-color: aquamarine;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .gen{
+            background-color: darkgray;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgba(91, 204, 204, 0.562);
+        }
+    </style>
+</head>
+<body>
+    <h1>DESAFIO 3 - Tabela com Genero/Nome e Filmes</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>GRUPO</td>
+                <td colspan="2">NOMES</td>
+                <td colspan="3">FILMES</td>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="gen" rowspan="3">MULHERES</td>
+                <td colspan="2">Ana Maria</td>
+                
+                <td>Filme</td>
+                <td>Filme</td>
+                <td>Filme</td>
+            </tr>
+            <tr>
+                <td colspan="2">Beatriz Souza</td>
+                
+                <td>Filme</td>
+                <td>Filme</td>
+                <td>Filme</td>
+            </tr>
+            <tr>
+                <td colspan="2">Claudia Mello</td>
+                
+                <td>Filme</td>
+                <td>Filme</td>
+                <td>Filme</td>
+                
+            </tr>
+            <tr>
+                <td class="gen" rowspan="3">HOMENS</td>
+                <td colspan="2">bruno Mendonça</tFilmed>
+                
+                <td>Filme</td>
+                <td>Filme</td>
+                <td>Filme</td>
+            </tr>
+            <tr>
+                
+                <td colspan="2">Daniel</td>
+                <td>Filme</td>
+                <td>Filme</td>
+                <td>Filme</td>
+                
+            </tr>
+            <tr>
+                
+                <td colspan="2">negoveio</td>
+                
+                <td>Filme</td>
+                <td>Filme</td>
+                <td>Filme</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
