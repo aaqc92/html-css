@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe em Página</title>
+    <style>
+        body{
+            background-color: rgb(75, 114, 129);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            margin: auto;
+            display: block;
+            width: 92vw;
+            height: 300px;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Adicionando IFRAME em página na web</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim doloribus nostrum cum maiores molestiae minus ipsam esse ipsa sequi laboriosam ea ipsum, possimus accusamus dolorem suscipit vitae quisquam nesciunt quis?</p>
+    
+        <ul>
+            <a href="portal/pag001.html" target="janela">
+                <li>&#8658;Acesse a Página 1</li>
+            </a>
+            <a href="portal/pag002.html" target="janela">
+                <li>&#8658;Acesse a Página 2</li>
+            </a>
+            <a href="portal/pag003.html" target="janela">
+                <li>&#8658;Acesse a Página 3</li>
+            </a>
+        </ul>
+    <iframe id="tela" srcdoc="<h1>Experimentando tag 'srcdoc'</h><br><img src='../ex004/favicon-32x32.png' type='image/png' margin='center bottom' width='40px'</img>" name="janela"></iframe>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sit, dolor eos nesciunt perferendis numquam repellendus, earum nihil error sapiente architecto dolores laboriosam officiis accusantium, corrupti aliquid molestias doloribus voluptas. <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse aliquam, nam aliquid illum impedit ipsa molestias commodi vitae? Eum, magni id! Laudantium expedita veritatis tenetur libero quas ut dicta delectus.
+    </p>
+
+</body>
+</html>
