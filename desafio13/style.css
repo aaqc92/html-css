@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body{
+    background-image: url('pacote-d013/imagens/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+    
+}
+
+section#telefone {
+    height: 627px;
+    width: 311px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    background-image: url('pacote-d013/imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    left: 22px;
+    top: 80px;
+    width: 267px;
+    height: 470px;
+  }
+
+section#redes-sociais > a > img {
+    width: 40px;
+    margin: 8px;
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid black;
+    transform: translate(-3px, 5px);
+    background-color: rgb(255, 255, 255);
+    transition: transform .5s, border 1s;
+}
